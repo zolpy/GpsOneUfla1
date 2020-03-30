@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/abc_button_padding_vertical_material"
+    android:paddingLeft="@dimen/abc_button_padding_horizontal_material"
+    android:paddingRight="@dimen/abc_button_padding_horizontal_material"
+    android:paddingTop="@dimen/abc_button_padding_vertical_material"
+    tools:context="com.monteolimpo.gpsoneufla1.MapsActivity" >
+
+    <TextView
+        android:id="@+id/tv_teca2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS com Google Maps: Trabalho Tópicos Especiais 2" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distância"
+            android:onClick="getDistance"
+            android:id="@+id/button4" />
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Local"
+                android:onClick="getLocation"
+                android:id="@+id/distancia" />
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/activity_maps" />
+
+</LinearLayout>
+
